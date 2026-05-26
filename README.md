@@ -117,22 +117,14 @@ I have a strong affinity for **Design Verification (DV)**. For me, verification 
 
 ## 📊 TELEMETRY MODULES // GITHUB CORE STATUS
 
-<table align="center" width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=techanand8&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false" alt="Mayank's Stats" width="98%"/>
-    </td>
-    <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=techanand8&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="Top Languages" width="98%"/>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <br/>
-      <img src="https://nirzak-streak-stats.vercel.app/?user=techanand8&theme=catppuccin_mocha&hide_border=false" alt="Streak Stats" width="100%"/>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=techanand8&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false" alt="Mayank's Stats" height="180px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=techanand8&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="Top Languages" height="180px" />
+</p>
+<p align="center">
+  <img src="https://nirzak-streak-stats.vercel.app/?user=techanand8&theme=catppuccin_mocha&hide_border=false" alt="Streak Stats" />
+</p>
+
 
 ---
 
