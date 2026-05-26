@@ -119,14 +119,14 @@ I have a strong affinity for **Design Verification (DV)**. For me, verification 
 
 <div align="center">
 
-  ![Mayank's Stats](https://github-readme-stats.vercel.app/api?username=techanand8&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false)
-  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=techanand8&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+  ![Mayank's Stats](https://github-readme-stats.shion.dev/api?username=techanand8&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false)
+  ![Top Languages](https://github-readme-stats.shion.dev/api/top-langs/?username=techanand8&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 </div>
 
 <div align="center">
 
-  ![Streak Stats](https://nirzak-streak-stats.vercel.app/?user=techanand8&theme=catppuccin_mocha&hide_border=false)
+  ![Streak Stats](https://streak-stats.demolab.com/?user=techanand8&theme=catppuccin_mocha&hide_border=false)
 
 </div>
 
@@ -134,7 +134,8 @@ I have a strong affinity for **Design Verification (DV)**. For me, verification 
 
 <div align="center">
 
-  [![Telemetry Count](https://visitcount.itsvg.in/api?id=techanand8&icon=0&color=0)](https://visitcount.itsvg.in)
+  [![Telemetry Count](https://komarev.com/ghpvc/?username=techanand8&color=blueviolet&style=flat-square)](https://github.com/techanand8)
 
 </div>
+
 
