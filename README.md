@@ -48,7 +48,7 @@ mayank@anand-core ~ $ fastfetch --config vlsi.json
 <b>ROLE:</b> Aspiring VLSI & DV Engineer
 <b>SYSTEM:</b> NixOS / Hyprland Riced Environment (Latest)
 <b>WORKSTATION:</b> AMD Ryzen + NVIDIA (GPU Optimized)
-<b>SHELL:</b> zsh + Neovim v0.10 (Highly Customized workflows)
+<b>SHELL:</b> zsh + Neovim latest (Highly Customized workflows)
 <b>DOMAINS:</b> Digital VLSI Design & Embedded IoT (Learning)
 <b>PASSION:</b> Design Verification (DV) & RTL Synthesis
 <b>LATENCY:</b> 0.00ns [Zero-Latency Silicon Focus]
