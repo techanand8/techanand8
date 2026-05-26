@@ -117,19 +117,24 @@ I have a strong affinity for **Design Verification (DV)**. For me, verification 
 
 ## 📊 TELEMETRY MODULES // GITHUB CORE STATUS
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=techanand8&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false" alt="Mayank's Stats" height="180px" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=techanand8&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="Top Languages" height="180px" />
-</p>
-<p align="center">
-  <img src="https://nirzak-streak-stats.vercel.app/?user=techanand8&theme=catppuccin_mocha&hide_border=false" alt="Streak Stats" />
-</p>
+<div align="center">
 
+  ![Mayank's Stats](https://github-readme-stats.vercel.app/api?username=techanand8&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false)
+  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=techanand8&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+
+</div>
+
+<div align="center">
+
+  ![Streak Stats](https://nirzak-streak-stats.vercel.app/?user=techanand8&theme=catppuccin_mocha&hide_border=false)
+
+</div>
 
 ---
 
-<p align="center">
-  <a href="https://visitcount.itsvg.in">
-    <img src="https://visitcount.itsvg.in/api?id=techanand8&icon=0&color=0" alt="Telemetry Count" />
-  </a>
-</p>
+<div align="center">
+
+  [![Telemetry Count](https://visitcount.itsvg.in/api?id=techanand8&icon=0&color=0)](https://visitcount.itsvg.in)
+
+</div>
+
