@@ -1,0 +1,238 @@
+<svg width="800" height="300" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: #0d0f18; font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1b1d36" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#07080d" stop-opacity="1" />
+    </radialGradient>
+    <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="laser-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0" />
+      <stop offset="15%" stop-color="#00f0ff" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#bd93f9" stop-opacity="0.9" />
+      <stop offset="85%" stop-color="#00f0ff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0" />
+    </linearGradient>
+    
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1f2438" stroke-width="0.8" stroke-opacity="0.4" />
+      <circle cx="0" cy="0" r="1.2" fill="#00f0ff" fill-opacity="0.15" />
+    </pattern>
+  </defs>
+
+  <style>
+    /* Keyframe Animations */
+    @keyframes pulse-core {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.6)); }
+      50% { transform: scale(1.02); filter: drop-shadow(0 0 30px rgba(189, 147, 249, 0.8)); }
+    }
+    @keyframes pulse-grid {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.6; }
+    }
+    @keyframes rotate-ring {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes rotate-ring-reverse {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+    @keyframes laser-scan {
+      0% { transform: translateY(-20px); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateY(320px); opacity: 0; }
+    }
+    @keyframes flow-circuit {
+      to { stroke-dashoffset: -40; }
+    }
+    @keyframes blink-led {
+      0%, 100% { fill: #00f0ff; opacity: 1; filter: drop-shadow(0 0 3px #00f0ff); }
+      50% { fill: #1f2438; opacity: 0.4; filter: none; }
+    }
+    @keyframes blink-led-alt {
+      0%, 100% { fill: #ff79c6; opacity: 0.3; filter: none; }
+      50% { fill: #ff79c6; opacity: 1; filter: drop-shadow(0 0 4px #ff79c6); }
+    }
+    @keyframes terminal-text {
+      0%, 100% { opacity: 0.9; }
+      50% { opacity: 0.6; }
+    }
+
+    /* Target Styles */
+    .animated-grid {
+      animation: pulse-grid 8s ease-in-out infinite;
+    }
+    .core-die {
+      transform-origin: 400px 150px;
+      animation: pulse-core 4s ease-in-out infinite;
+    }
+    .rotator {
+      transform-origin: 400px 150px;
+      animation: rotate-ring 25s linear infinite;
+    }
+    .rotator-rev {
+      transform-origin: 400px 150px;
+      animation: rotate-ring-reverse 15s linear infinite;
+    }
+    .laser {
+      animation: laser-scan 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    .trace-flow {
+      stroke-dasharray: 20, 20;
+      animation: flow-circuit 2s linear infinite;
+    }
+    .trace-flow-fast {
+      stroke-dasharray: 10, 15;
+      animation: flow-circuit 1.2s linear infinite;
+    }
+    .led-blink {
+      animation: blink-led 1.5s step-end infinite;
+    }
+    .led-blink-alt {
+      animation: blink-led-alt 2s step-end infinite;
+    }
+    .term-readout {
+      animation: terminal-text 3s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Deep space background and grid overlay -->
+  <rect width="800" height="300" fill="url(#bg-glow)" />
+  <rect class="animated-grid" width="800" height="300" fill="url(#grid)" />
+
+  <!-- Ambient light glow from the core -->
+  <circle cx="400" cy="150" r="140" fill="url(#core-glow)" />
+
+  <!-- Circuit traces / lines flowing to processor -->
+  <g stroke-width="1.2" opacity="0.6">
+    <!-- Left to Center -->
+    <path d="M 50 150 L 250 150" stroke="#00f0ff" />
+    <path class="trace-flow" d="M 50 150 L 250 150" stroke="#bd93f9" />
+    <path d="M 80 80 L 180 80 L 270 120" stroke="#00f0ff" fill="none" />
+    <path class="trace-flow-fast" d="M 80 80 L 180 80 L 270 120" stroke="#ffb86c" fill="none" />
+    <path d="M 80 220 L 180 220 L 270 180" stroke="#00f0ff" fill="none" />
+    <path class="trace-flow" d="M 80 220 L 180 220 L 270 180" stroke="#00f0ff" fill="none" />
+
+    <!-- Right to Center -->
+    <path d="M 750 150 L 550 150" stroke="#00f0ff" />
+    <path class="trace-flow" d="M 750 150 L 550 150" stroke="#bd93f9" />
+    <path d="M 720 80 L 620 80 L 530 120" stroke="#00f0ff" fill="none" />
+    <path class="trace-flow-fast" d="M 720 80 L 620 80 L 530 120" stroke="#ffb86c" fill="none" />
+    <path d="M 720 220 L 620 220 L 530 180" stroke="#00f0ff" fill="none" />
+    <path class="trace-flow" d="M 720 220 L 620 220 L 530 180" stroke="#00f0ff" fill="none" />
+  </g>
+
+  <!-- Central Silicon Processor Unit -->
+  <g class="core-die">
+    <!-- Outer Shield / Chip Frame -->
+    <rect x="330" y="80" width="140" height="140" rx="16" fill="#151829" stroke="#bd93f9" stroke-width="2.5" />
+    
+    <!-- Chip Outer Pins -->
+    <g stroke="#00f0ff" stroke-width="2.5" stroke-linecap="round" opacity="0.8">
+      <!-- Top -->
+      <line x1="360" y1="80" x2="360" y2="72" />
+      <line x1="380" y1="80" x2="380" y2="72" />
+      <line x1="400" y1="80" x2="400" y2="72" />
+      <line x1="420" y1="80" x2="420" y2="72" />
+      <line x1="440" y1="80" x2="440" y2="72" />
+      <!-- Bottom -->
+      <line x1="360" y1="220" x2="360" y2="228" />
+      <line x1="380" y1="220" x2="380" y2="228" />
+      <line x1="400" y1="220" x2="400" y2="228" />
+      <line x1="420" y1="220" x2="420" y2="228" />
+      <line x1="440" y1="220" x2="440" y2="228" />
+      <!-- Left -->
+      <line x1="330" y1="110" x2="322" y2="110" />
+      <line x1="330" y1="130" x2="322" y2="130" />
+      <line x1="330" y1="150" x2="322" y2="150" />
+      <line x1="330" y1="170" x2="322" y2="170" />
+      <line x1="330" y1="190" x2="322" y2="190" />
+      <!-- Right -->
+      <line x1="470" y1="110" x2="478" y2="110" />
+      <line x1="470" y1="130" x2="478" y2="130" />
+      <line x1="470" y1="150" x2="478" y2="150" />
+      <line x1="470" y1="170" x2="478" y2="170" />
+      <line x1="470" y1="190" x2="478" y2="190" />
+    </g>
+
+    <!-- Silicon Die (Inner Core) -->
+    <rect x="345" y="95" width="110" height="110" rx="10" fill="#090a12" stroke="#00f0ff" stroke-width="1.5" />
+    
+    <!-- Rotating Hardware Clock / Cyber-Ring -->
+    <circle class="rotator" cx="400" cy="150" r="40" stroke="#bd93f9" stroke-width="1.5" stroke-dasharray="100, 40, 20, 40" stroke-linecap="round" fill="none" />
+    <circle class="rotator-rev" cx="400" cy="150" r="32" stroke="#00f0ff" stroke-width="1" stroke-dasharray="30, 20, 10, 20" fill="none" />
+
+    <!-- Central Node (VLSI Core Node) -->
+    <circle cx="400" cy="150" r="14" fill="#0d0f18" stroke="#ff79c6" stroke-width="2.5" />
+    <polygon points="400,143 406,154 394,154" fill="#00f0ff" />
+  </g>
+
+  <!-- Left Sidebar Interface: Mayank Anand Profile Specs -->
+  <g class="term-readout" transform="translate(30, 50)">
+    <!-- Tech Frame -->
+    <rect x="0" y="0" width="220" height="200" rx="8" fill="#090a12" fill-opacity="0.8" stroke="#1f2438" stroke-width="1.5" />
+    <rect x="0" y="0" width="220" height="26" rx="8" fill="#151829" stroke="#1f2438" stroke-width="1" />
+    <circle cx="15" cy="13" r="4" fill="#ff5555" />
+    <circle cx="27" cy="13" r="4" fill="#ffb86c" />
+    <circle cx="39" cy="13" r="4" fill="#50fa7b" />
+    <text x="60" y="18" font-size="11" fill="#6272a4" font-weight="bold">MAYANK ANAND</text>
+    
+    <!-- Spec Readouts -->
+    <text x="15" y="55" font-size="10.5" fill="#8be9fd" font-weight="bold">> HARDWARE_LEARNER</text>
+    <text x="25" y="75" font-size="10" fill="#f8f8f2">FOCUS: <tspan fill="#ff79c6">Digital VLSI &amp; DV</tspan></text>
+    <text x="25" y="95" font-size="10" fill="#f8f8f2">STUDY: <tspan fill="#50fa7b">UVM / SVA / RTL</tspan></text>
+    <text x="25" y="115" font-size="10" fill="#f8f8f2">TARGET: <tspan fill="#bd93f9">ASIC &amp; FPGA Logic</tspan></text>
+    
+    <text x="15" y="145" font-size="10.5" fill="#8be9fd" font-weight="bold">> CORE_OS</text>
+    <text x="25" y="165" font-size="10" fill="#00f0ff">NixOS / Hyprland</text>
+    <text x="25" y="185" font-size="10" fill="#f8f8f2">STATUS: <tspan fill="#50fa7b" font-weight="bold">ZERO LATENCY</tspan></text>
+  </g>
+
+  <!-- Right Sidebar Interface: Design Verification (DV) Matrix -->
+  <g class="term-readout" transform="translate(550, 50)">
+    <!-- Tech Frame -->
+    <rect x="0" y="0" width="220" height="200" rx="8" fill="#090a12" fill-opacity="0.8" stroke="#1f2438" stroke-width="1.5" />
+    <rect x="0" y="0" width="220" height="26" rx="8" fill="#151829" stroke="#1f2438" stroke-width="1" />
+    <circle cx="15" cy="13" r="4" fill="#ff5555" />
+    <circle cx="27" cy="13" r="4" fill="#ffb86c" />
+    <circle cx="39" cy="13" r="4" fill="#50fa7b" />
+    <text x="60" y="18" font-size="11" fill="#6272a4" font-weight="bold">DESIGN VERIFICATION</text>
+    
+    <!-- Verification Readouts -->
+    <text x="15" y="55" font-size="10.5" fill="#8be9fd" font-weight="bold">> DV_LEARNING</text>
+    
+    <!-- RTL Stage -->
+    <text x="25" y="75" font-size="10" fill="#f8f8f2">RTL DESIGN: <tspan fill="#50fa7b">Verilog &amp; SV</tspan></text>
+    <circle class="led-blink" cx="190" cy="72" r="3.5" fill="#50fa7b" />
+    
+    <!-- SVA Stage -->
+    <text x="25" y="95" font-size="10" fill="#f8f8f2">SVA ASSERTS: <tspan fill="#00f0ff">IN PROGRESS</tspan></text>
+    <circle class="led-blink" cx="190" cy="92" r="3.5" fill="#00f0ff" />
+    
+    <!-- UVM Stage -->
+    <text x="25" y="115" font-size="10" fill="#f8f8f2">UVM METHOD : <tspan fill="#bd93f9">DEEP DIVE</tspan></text>
+    <circle class="led-blink" cx="190" cy="112" r="3.5" fill="#bd93f9" />
+
+    <!-- low power -->
+    <text x="25" y="135" font-size="10" fill="#f8f8f2">LOW-POWER : <tspan fill="#ffb86c">INTEGRATING</tspan></text>
+    <circle class="led-blink-alt" cx="190" cy="132" r="3.5" fill="#ffb86c" />
+
+    <line x1="15" y1="155" x2="205" y2="155" stroke="#1f2438" stroke-width="1" />
+    
+    <text x="15" y="175" font-size="10.5" fill="#8be9fd" font-weight="bold">> SYSTEM_MOTTO</text>
+    <text x="25" y="191" font-size="9" fill="#ff79c6" font-weight="bold">Passionately curious learning core</text>
+  </g>
+
+  <!-- Scanning Laser Beam -->
+  <g class="laser">
+    <rect x="250" y="0" width="300" height="2" fill="url(#laser-glow)" />
+    <!-- Light glowing halos near borders -->
+    <ellipse cx="400" cy="1" rx="80" ry="3" fill="#00f0ff" opacity="0.6" filter="blur(3px)" />
+  </g>
+</svg>
