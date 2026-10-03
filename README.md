@@ -25,10 +25,14 @@
 </p>
 
 <p align="center">
+  <!-- Core RTL & Verification -->
   <img src="https://img.shields.io/badge/SystemVerilog-00599C?style=flat-square&logo=systemverilog&logoColor=white" alt="SystemVerilog" />
-  <img src="https://img.shields.io/badge/Verilog-3776AB?style=flat-square" alt="Verilog" />
+  <img src="https://img.shields.io/badge/Verilog-2C3E50?style=flat-square" alt="Verilog" />
+  <img src="https://img.shields.io/badge/UVM%201.2-50fa7b?style=flat-square&logoColor=black" alt="UVM" />
+  <!-- Scripting, Automation & Modeling -->
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/C%2FC%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C/C++" />
+  <img src="https://img.shields.io/badge/Tcl%2FTk-1A5276?style=flat-square" alt="Tcl" />
+  <img src="https://img.shields.io/badge/C%20%2F%20C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C/C++" />
   <img src="https://img.shields.io/badge/Bash-121011?style=flat-square&logo=gnu-bash&logoColor=white" alt="Bash" />
 </p>
 
