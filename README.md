@@ -82,7 +82,7 @@ I am an **Electronics and Communication Engineering (ECE)** graduate who is **pa
 | :--- | :--- |
 | **Hardware & DV** | SystemVerilog, Verilog, UVM (Testbench Architecture), SVA (Assertions), Constrained-Random Testing, Functional Coverage |
 | **Architecture & Logic** | Digital Logic Design, FSM Design, Pipelining Basics, Synchronous Design |
-| **EDA & Simulators** | ModelSim / QuestaSim, Vivado, Verilator, Icarus Verilog, GTKWave, Yosys |
+| **EDA & Simulators** | Industry EDA Suites (Synopsys Front-End RTL & DV) & Open-Source Toolchains |
 | **Scripting & Automation** | Python, Bash, Makefiles, Git |
 | **Workstation Stack** | MOS (Linux), Neovim, Tmux, Terminal Automation |
 
