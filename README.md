@@ -24,6 +24,14 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/SystemVerilog-00599C?style=flat-square&logo=systemverilog&logoColor=white" alt="SystemVerilog" />
+  <img src="https://img.shields.io/badge/Verilog-3776AB?style=flat-square" alt="Verilog" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/C%2FC%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C/C++" />
+  <img src="https://img.shields.io/badge/Bash-121011?style=flat-square&logo=gnu-bash&logoColor=white" alt="Bash" />
+</p>
+
 ---
 
 ## 📟 SYSTEM TELEMETRY // MOS WORKSTATION
