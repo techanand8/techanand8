@@ -102,5 +102,5 @@ I am an **Electronics and Communication Engineering (ECE)** graduate who is **pa
 ---
 
 <p align="center">
-  <i>"Passionately curious about silicon — designing clean RTL and verifying it with precision."</i>
+  <i>"Passionately curious about chip design — writing clean RTL and verifying it with precision."</i>
 </p>
