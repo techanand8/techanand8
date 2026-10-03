@@ -1,0 +1,240 @@
+<svg width="800" height="300" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: #060813; font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;">
+  <defs>
+    <!-- Background Radiant Gradients -->
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#121832" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#070913" stop-opacity="0.96" />
+      <stop offset="100%" stop-color="#020306" stop-opacity="1" />
+    </radialGradient>
+
+    <radialGradient id="chip-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.35" />
+      <stop offset="45%" stop-color="#bd93f9" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="neon-cyan-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="50%" stop-color="#bd93f9" />
+      <stop offset="100%" stop-color="#ff79c6" />
+    </linearGradient>
+
+    <linearGradient id="laser-beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0" />
+      <stop offset="25%" stop-color="#00f0ff" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#ff79c6" stop-opacity="0.9" />
+      <stop offset="75%" stop-color="#50fa7b" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Subtle Silicon Grid Pattern -->
+    <pattern id="silicon-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#161f36" stroke-width="0.8" stroke-opacity="0.6" />
+      <circle cx="0" cy="0" r="1.1" fill="#00f0ff" fill-opacity="0.2" />
+    </pattern>
+  </defs>
+
+  <style>
+    /* Smooth, 100% Bug-Free Hardware Animations */
+    @keyframes pulse-chip {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.45)); }
+      50% { transform: scale(1.02); filter: drop-shadow(0 0 26px rgba(189, 147, 249, 0.7)); }
+    }
+    @keyframes rotate-clockwise {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes rotate-counter {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+    @keyframes flow-left {
+      to { stroke-dashoffset: -32; }
+    }
+    @keyframes flow-right {
+      to { stroke-dashoffset: -32; }
+    }
+    @keyframes blink-green {
+      0%, 100% { fill: #50fa7b; opacity: 1; filter: drop-shadow(0 0 4px #50fa7b); }
+      50% { fill: #172138; opacity: 0.3; filter: none; }
+    }
+    @keyframes scan-laser {
+      0% { transform: translateY(-10px); opacity: 0; }
+      15% { opacity: 0.85; }
+      85% { opacity: 0.85; }
+      100% { transform: translateY(310px); opacity: 0; }
+    }
+
+    .chip-unit {
+      transform-origin: 400px 132px;
+      animation: pulse-chip 4s ease-in-out infinite;
+    }
+    .orbit-cw {
+      transform-origin: 400px 132px;
+      animation: rotate-clockwise 22s linear infinite;
+    }
+    .orbit-ccw {
+      transform-origin: 400px 132px;
+      animation: rotate-counter 14s linear infinite;
+    }
+    .trace-left {
+      stroke-dasharray: 12, 10;
+      animation: flow-left 1.4s linear infinite;
+    }
+    .trace-right {
+      stroke-dasharray: 12, 10;
+      animation: flow-right 1.4s linear infinite;
+    }
+    .led-g { animation: blink-green 1.8s step-end infinite; }
+    .scanner { animation: scan-laser 6.5s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+  </style>
+
+  <!-- Deep Background Layer -->
+  <rect width="800" height="300" fill="url(#bg-glow)" />
+  <rect width="800" height="300" fill="url(#silicon-grid)" />
+
+  <!-- Ambient Light Center -->
+  <circle cx="400" cy="132" r="145" fill="url(#chip-glow)" />
+
+  <!-- Interconnect Bus Lines (Left & Right) -->
+  <g stroke-width="1.5" opacity="0.75">
+    <!-- Left to Chip -->
+    <path d="M 270 102 L 335 102" stroke="#161f36" />
+    <path class="trace-left" d="M 270 102 L 335 102" stroke="#00f0ff" />
+
+    <path d="M 270 132 L 335 132" stroke="#161f36" />
+    <path class="trace-left" d="M 270 132 L 335 132" stroke="#bd93f9" />
+
+    <path d="M 270 162 L 335 162" stroke="#161f36" />
+    <path class="trace-left" d="M 270 162 L 335 162" stroke="#ff79c6" />
+
+    <!-- Right from Chip -->
+    <path d="M 530 102 L 465 102" stroke="#161f36" />
+    <path class="trace-right" d="M 530 102 L 465 102" stroke="#50fa7b" />
+
+    <path d="M 530 132 L 465 132" stroke="#161f36" />
+    <path class="trace-right" d="M 530 132 L 465 132" stroke="#00f0ff" />
+
+    <path d="M 530 162 L 465 162" stroke="#161f36" />
+    <path class="trace-right" d="M 530 162 L 465 162" stroke="#bd93f9" />
+  </g>
+
+  <!-- ==================== LEFT MODULE: MAYANK ANAND ==================== -->
+  <g transform="translate(25, 34)">
+    <!-- Terminal Shell (Width: 245 - Generous Breathing Room) -->
+    <rect x="0" y="0" width="245" height="216" rx="8" fill="#080c18" fill-opacity="0.95" stroke="#1d2742" stroke-width="1.5" />
+    <rect x="0" y="0" width="245" height="30" rx="8" fill="#10172c" stroke="#1d2742" stroke-width="1" />
+    
+    <!-- Window Control Dots -->
+    <circle cx="16" cy="15" r="4.5" fill="#ff5555" />
+    <circle cx="30" cy="15" r="4.5" fill="#ffb86c" />
+    <circle cx="44" cy="15" r="4.5" fill="#50fa7b" />
+    <!-- Clean Name Only (No // ECE) -->
+    <text x="64" y="19" font-size="11" fill="#8892b0" font-weight="700" letter-spacing="0.5">MAYANK ANAND</text>
+
+    <!-- Punchy, Large, Readable Human Text (Strictly Inside Borders) -->
+    <text x="20" y="60" font-size="12.5" fill="#00f0ff" font-weight="700">Digital VLSI Designer</text>
+    
+    <text x="20" y="90" font-size="11" fill="#f8f8f2">• SystemVerilog &amp; RTL</text>
+    <text x="20" y="118" font-size="11" fill="#ff79c6">• Passionately curious</text>
+    <text x="20" y="146" font-size="11" fill="#50fa7b">• Hardware Acceleration</text>
+
+    <line x1="20" y1="166" x2="225" y2="166" stroke="#18223c" stroke-width="1.2" />
+
+    <text x="20" y="192" font-size="10.5" fill="#bd93f9" font-weight="600">Laptop: MOS Workstation</text>
+    <text x="20" y="208" font-size="9" fill="#6272a4">Custom Linux for Front-End VLSI</text>
+  </g>
+
+  <!-- ==================== CENTER STAGE: SILICON CHIP ==================== -->
+  <g class="chip-unit">
+    <!-- Ceramic IC Package Frame -->
+    <rect x="335" y="67" width="130" height="130" rx="14" fill="#0c1020" stroke="#253556" stroke-width="2.2" />
+    
+    <!-- Gold / Cyan Leadframe Pins -->
+    <g stroke="#00f0ff" stroke-width="2.4" stroke-linecap="round" opacity="0.85">
+      <!-- Top -->
+      <line x1="360" y1="67" x2="360" y2="58" />
+      <line x1="380" y1="67" x2="380" y2="58" />
+      <line x1="400" y1="67" x2="400" y2="58" />
+      <line x1="420" y1="67" x2="420" y2="58" />
+      <line x1="440" y1="67" x2="440" y2="58" />
+      <!-- Bottom -->
+      <line x1="360" y1="197" x2="360" y2="206" />
+      <line x1="380" y1="197" x2="380" y2="206" />
+      <line x1="400" y1="197" x2="400" y2="206" />
+      <line x1="420" y1="197" x2="420" y2="206" />
+      <line x1="440" y1="197" x2="440" y2="206" />
+      <!-- Left -->
+      <line x1="335" y1="92" x2="326" y2="92" />
+      <line x1="335" y1="112" x2="326" y2="112" />
+      <line x1="335" y1="132" x2="326" y2="132" />
+      <line x1="335" y1="152" x2="326" y2="152" />
+      <line x1="335" y1="172" x2="326" y2="172" />
+      <!-- Right -->
+      <line x1="465" y1="92" x2="474" y2="92" />
+      <line x1="465" y1="112" x2="474" y2="112" />
+      <line x1="465" y1="132" x2="474" y2="132" />
+      <line x1="465" y1="152" x2="474" y2="152" />
+      <line x1="465" y1="172" x2="474" y2="172" />
+    </g>
+
+    <!-- Glossy Silicon Die Surface -->
+    <rect x="348" y="80" width="104" height="104" rx="9" fill="#04060d" stroke="url(#neon-cyan-purple)" stroke-width="1.6" />
+
+    <!-- Silicon Circuit Accents -->
+    <g stroke="#1a2542" stroke-width="1.2" fill="none">
+      <path d="M 358 90 L 372 90 L 377 95" />
+      <path d="M 442 90 L 428 90 L 423 95" />
+      <path d="M 358 174 L 372 174 L 377 169" />
+      <path d="M 442 174 L 428 174 L 423 169" />
+    </g>
+
+    <!-- Animated Rotating Clock Rings -->
+    <circle class="orbit-cw" cx="400" cy="132" r="36" stroke="#bd93f9" stroke-width="1.4" stroke-dasharray="75, 40, 20, 30" stroke-linecap="round" fill="none" />
+    <circle class="orbit-ccw" cx="400" cy="132" r="26" stroke="#00f0ff" stroke-width="1.2" stroke-dasharray="30, 20, 15, 15" fill="none" />
+
+    <!-- Center Silicon Core Node -->
+    <circle cx="400" cy="132" r="13" fill="#0c1020" stroke="#ff79c6" stroke-width="2" />
+    <circle cx="400" cy="132" r="5" fill="#50fa7b" />
+    
+    <!-- Chip Labels -->
+    <text x="400" y="226" font-size="9" fill="#00f0ff" font-weight="800" text-anchor="middle" letter-spacing="1">MOS WORKSTATION</text>
+    <text x="400" y="240" font-size="8" fill="#718096" text-anchor="middle">Front-End Silicon Setup</text>
+  </g>
+
+  <!-- ==================== RIGHT MODULE: DESIGN VERIFICATION ==================== -->
+  <g transform="translate(530, 34)">
+    <!-- Terminal Shell (Width: 245 - Generous Breathing Room) -->
+    <rect x="0" y="0" width="245" height="216" rx="8" fill="#080c18" fill-opacity="0.95" stroke="#25385e" stroke-width="1.6" />
+    <rect x="0" y="0" width="245" height="30" rx="8" fill="#10172c" stroke="#25385e" stroke-width="1" />
+    
+    <!-- Window Control Dots -->
+    <circle cx="16" cy="15" r="4.5" fill="#6272a4" opacity="0.6" />
+    <circle cx="30" cy="15" r="4.5" fill="#6272a4" opacity="0.6" />
+    <circle cx="44" cy="15" r="4.5" fill="#50fa7b" opacity="0.9" />
+    <text x="64" y="19" font-size="11" fill="#50fa7b" font-weight="700" letter-spacing="0.5">VERIFICATION (DV)</text>
+
+    <!-- Punchy, Large, Readable Human Text (Strictly Inside Borders) -->
+    <text x="20" y="60" font-size="12.5" fill="#50fa7b" font-weight="700">Primary Focus: DV</text>
+
+    <text x="20" y="90" font-size="11" fill="#f8f8f2">• UVM Testbenches</text>
+    <text x="20" y="118" font-size="11" fill="#00f0ff">• SVA Assertions</text>
+    <text x="20" y="146" font-size="11" fill="#bd93f9">• Testing AI Hardware</text>
+
+    <line x1="20" y1="166" x2="225" y2="166" stroke="#18223c" stroke-width="1.2" />
+
+    <text x="20" y="192" font-size="10.5" fill="#ffb86c" font-weight="600">• Synthesis &amp; Timing (STA)</text>
+    <text x="20" y="208" font-size="9" fill="#50fa7b">Rigorous Hardware Verification</text>
+  </g>
+
+  <!-- Scanning Laser Beam -->
+  <g class="scanner">
+    <rect x="250" y="0" width="300" height="1.8" fill="url(#laser-beam)" opacity="0.8" />
+    <ellipse cx="400" cy="1" rx="80" ry="2.5" fill="#ff79c6" opacity="0.5" filter="blur(2.5px)" />
+  </g>
+
+  <!-- ==================== BOTTOM FLOW: CLEAN & CLEAR ==================== -->
+  <text x="400" y="278" font-size="10.5" fill="#a0aec0" font-weight="600" text-anchor="middle" letter-spacing="1">
+    <tspan fill="#ffffff">RTL Design</tspan> ➔ <tspan fill="#50fa7b" font-weight="700">Verification (UVM)</tspan> ➔ <tspan fill="#00f0ff">Synthesis</tspan> ➔ <tspan fill="#ff79c6">Hardware Acceleration</tspan>
+  </text>
+</svg>
